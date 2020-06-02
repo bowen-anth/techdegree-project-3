@@ -7,6 +7,7 @@ Base Element Styles
 }
 
 body {
+	font-family: 'Merriweather', sans-serif;
 	margin: 0;
 	padding: 0;
 }
@@ -21,12 +22,13 @@ button {
   border-radius: 5px;
   width: 100%;
   border: 1px solid #4ebbb5;
- /* border: 1px solid #3ac162;
-  border-width: 1px 1px 3px;
-  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset; */
   margin-bottom: 10px;
   display: block;
   margin: 0 auto;
+}
+
+fieldset {
+	border: none;
 }
 
 footer {
@@ -41,6 +43,11 @@ form {
 	border-top: 2px solid black;
 	margin: 0 auto;
 	margin-top: 3px;
+	font: black;
+}
+
+h5 {
+	margin-top: 0px;
 }
 
 header h1 {
@@ -52,9 +59,68 @@ header h1 {
 	font-size: 1.5em;
 }
 
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+select,
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: black; /* #8a97a0; */
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+input:focus {
+  background-color: #4ebbb5;
+}
+
+input::placeholder {
+	text-align: right;
+	font-style: italic;
+}
+
+legend {
+	text-align: left;
+}
+
+select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+textarea {
+	height: 7rem;
+}
+
 /* =================
 Base Layout Styles
 ================== */
+
+.choose {
+	color: gray;
+}
+
+.contact-fieldset {
+	border-bottom: 2px solid black;
+}
 
 .div-contact {
 	border-top: 1px solid black;
@@ -68,42 +134,20 @@ Base Layout Styles
 	border-top: 2px solid black;
 }
 
-input[type="text"],
-input[type="password"],
-input[type="date"],
-input[type="datetime"],
-input[type="email"],
-input[type="number"],
-input[type="search"],
-input[type="tel"],
-input[type="time"],
-input[type="url"],
-textarea,
-select {
-  background: rgba(255,255,255,0.1);
-  border: none;
-  font-size: 16px;
-  height: auto;
-  margin: 0;
-  outline: 0;
-  padding: 15px;
-  width: 100%;
-  background-color: #e8eeef;
-  color: #8a97a0;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-  margin-bottom: 30px;
-}
-
-.placeholder {
-	text-align: right;
-	font-style: italic;
-}
-
 .signup {
 	max-width: 300px;
 	border-bottom: 4px solid black;
 	text-align: center;
 	margin: 0 auto;
+}
+
+.signup p {
+	color: gray;
+}
+
+#zip {
+	width: 60%;
+	display: block;
 }
 
 /* =================
