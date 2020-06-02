@@ -30,6 +30,8 @@ button {
 
 footer {
 	text-align: center;
+	color: gray;
+	font-style: italic;
 }
 
 form {
@@ -37,20 +39,61 @@ form {
 	border-bottom-style: solid;
 	padding: 0 0 20px;
 	max-width: 300px;
+	border-top: 2px solid black;
+	margin: 0 auto;
+	margin-top: 3px;
 }
 
-header {
-	background: blue;
+header h1 {
+	margin: 0 auto;
+	background: navy;
 	color: white;
 	text-align: center;
-	margin: 0 auto;
-	margin-top: -24px;
-	padding: 20px 0px 5px 0px;
+	padding: 20px 5px;
+	font-size: 1.5em;
 }
 
 /* =================
 Base Layout Styles
 ================== */
+
+.div-contact {
+	border-top: 2px solid black;
+	padding: 0;
+	margin: 0 auto;
+	max-width: 300px;
+	margin-top: 3px;
+}
+
+.div-newsletter {
+	border-top: 2px solid black;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
 
 .signup {
 	max-width: 300px;
