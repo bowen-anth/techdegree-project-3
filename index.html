@@ -35,13 +35,13 @@
 
 
 				<label for="phone">Phone Number</label><br><br>
-				<input type="tel" id="phone" name="user_phone">
+				<input type="tel" id="phone" name="user_phone" placeholder="xxx-xxx-xxxx" max-length="10"> <!-- exceeds -- max length -->
 				
 				<label for="address">Street Address</label><br><br>
-				<input type="text" id="address" name="user_address">
+				<input type="text" id="address" name="user_address" placeholder="Required">
 				
 				<label for="city">City</label><br><br>
-				<input type="text" id="city" name="user_city">
+				<input type="text" id="city" name="user_city" placeholder="Required">
 				
 				<label for="state">State</label><br><br>
 					<select type="state" id="state" name="state" placeholder="Choose State">
@@ -100,7 +100,7 @@
 					</select>
 								
 				<label for="zip">Zip Code</label><br><br>
-				<input type="text" id="zip" name="user_zip" inputmode="numeric" pattern=[0-9]{5} maxlength="10" class="zip-length">
+				<input type="text" id="zip" name="user_zip" inputmode="numeric" pattern=[0-9] maxlength="10" class="zip-length" placeholder="xxxx-xxx"> <!-- exceeds -- max length and numeric input-->
 
 			</fieldset>
 

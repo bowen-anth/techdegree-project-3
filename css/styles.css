@@ -27,14 +27,22 @@ button {
   margin: 0 auto;
 }
 
+button:hover {
+	background-color: tomato;
+	transition-duration: .75s; /* exceeds -- 4) css transition on submit button hover */
+}
+
 fieldset {
 	border: none;
+	font-size: .95em;
 }
 
 footer {
+	background-color: #c9baba; /* exceeds -- 3) change background color one main section of site */
 	text-align: center;
 	color: gray;
 	font-style: italic;
+	padding: 10px 10px;
 }
 
 form {
@@ -87,7 +95,7 @@ select {
   margin-bottom: 30px;
 }
 
-input:focus {
+input:active {
   background-color: #4ebbb5;
 }
 
@@ -96,14 +104,12 @@ input::placeholder {
 	font-style: italic;
 }
 
-legend {
-	text-align: left;
+label {
+	line-height: 1.7em;
 }
 
-select {
-  padding: 6px;
-  height: 32px;
-  border-radius: 2px;
+legend {
+	text-align: left;
 }
 
 textarea {
