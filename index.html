@@ -25,29 +25,29 @@
 				<legend><h3>Contact Information</h3></legend>
 			<div class="container">
 				<label for="name">Full Name</label><br><br>
-				<input type="text" id="name" name="user_name" placeholder="Required">
+				<input type="text" id="name" name="user_name" placeholder="Required"><br>
 			</div>
-
+			<br>
 			<div class="container">
 				<label for="email">Email Address</label><br><br>
-				<input type="email" id="email" name="user_email" placeholder="Required">
+				<input type="email" id="email" name="user_email" placeholder="Required"><br>
 			</div>
-
+			<br>
 			<div class="container">
 				<label for="phone">Phone Number</label><br><br>
-				<input type="tel" id="phone" name="user_phone" placeholder="xxx-xxx-xxxx" max-length="10"> <!-- exceeds -- max length -->
+				<input type="tel" id="phone" name="user_phone" placeholder="xxx-xxx-xxxx" max-length="10"><br> <!-- exceeds -- max length -->
 			</div>
-
+			<br>
 			<div class="container">				
 				<label for="address">Street Address</label><br><br>
-				<input type="text" id="address" name="user_address" placeholder="Required">
+				<input type="text" id="address" name="user_address" placeholder="Required"><br>
 			</div>	
-				
+			<br>	
 			<div class="container">
 				<label for="city">City</label><br><br>
-				<input type="text" id="city" name="user_city" placeholder="Required">
+				<input type="text" id="city" name="user_city" placeholder="Required"><br>
 			</div>	
-				
+			<br>	
 			<div class="container">
 				<label for="state">State</label><br><br>
 					<select type="state" id="state" name="state" placeholder="Choose State">
@@ -105,17 +105,16 @@
 						<option value="WY">Wyoming</option>
 					</select>
 			</div>					
-				
+			<br>
 			<div class="container">
-				<label for="zip">Zip Code</label><br><br>
+				<label for="zip" id="zip-label">Zip Code</label><br><br>
 				<input type="text" id="zip" name="user_zip" inputmode="numeric" pattern=[0-9] maxlength="10" class="zip-length" placeholder="xxxx-xxx"> <!-- exceeds -- max length and numeric input-->
 			</div>
-			
+			<br>
 			</fieldset>
 
 		<!-- Border Here -->
-
-
+			<br>
 			<fieldset>
 				<legend><h3 class="newsletter">Newsletter</h3></legend>
 				<label>Select the newsletters you would like to receive</label><br><br>
@@ -138,7 +137,7 @@
 				<label for="text">Plain text</label><br>
 				<p></p>
 				<label for="topics">Other topics you'd like to hear about</label><br><br>
-				<textarea id="topics" name="topics"></textarea>
+				<textarea id="topics" name="topics"></textarea><br><br>
 
 				<button type="submit">Sign Up</button>
 			</fieldset>

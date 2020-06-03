@@ -23,7 +23,7 @@ button {
   border-radius: 5px;
   width: 100%;
   border: 1px solid #4ebbb5;
-  margin-bottom: 10px;
+  margin: 10px;
   display: block;
   margin: 0 auto;
 }
@@ -93,7 +93,7 @@ select {
   background-color: #e8eeef;
   color: black; /* #8a97a0; */
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 input:active {
@@ -150,9 +150,10 @@ Base Layout Styles
 
 .signup p {
 	color: gray;
+	padding-bottom: 7px;
 }
 
-#zip {
+ #zip {
 	width: 60%;
 	display: block;
 }
@@ -168,6 +169,7 @@ Media Queries
 	}
 
 	fieldset {
+		font-size: 1em;
 		max-width: 100%;
 	}
 
@@ -179,16 +181,18 @@ Media Queries
 		display: flex;
 		align-items: center;
 		justify-content: left;
+		margin-bottom: 30px;
 	}
 
 	.container label {
-		flex-basis: 20%;
+		flex-basis: 25%;
+		flex-shrink: 0;
 	}
 
 	.container input select {
 		flex-basis: 70%;
-		flex-grow: 1;
-		justify-content: left;
+		flex-grow: 7;
+		align-self: flex-start;
 	}
 
 	.newsletter {
@@ -201,5 +205,7 @@ Media Queries
 	}
 
 	#zip {
-	width: 33%;
+	max-width: 33%;
 }
+
+	}
