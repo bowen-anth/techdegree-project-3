@@ -95,7 +95,7 @@ select {
   /* margin-bottom: 30px; */
 }
 
-input:active {
+input:focus {
   background-color: #4ebbb5;
 }
 
