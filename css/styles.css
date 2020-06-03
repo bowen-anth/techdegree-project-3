@@ -97,6 +97,7 @@ select {
 
 input:focus {
   background-color: #4ebbb5;
+  transition-duration: .75s; /* exceeds -- 4) css transition focus state */
 }
 
 input::placeholder {
