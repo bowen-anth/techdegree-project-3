@@ -30,7 +30,7 @@ button {
 
 button:hover {
 	background-color: tomato;
-	transition-duration: .75s; /* exceeds -- 4) css transition on submit button hover */
+	transition-duration: .75s;
 }
 
 fieldset {
